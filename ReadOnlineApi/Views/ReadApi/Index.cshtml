@@ -1,0 +1,12 @@
+﻿@model ReadOnlineApi.Models.DataModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h4>Page: @Model.page</h4>
+<h4>Per Page: @Model.per_page</h4>
+@foreach (var m in Model.data)
+{
+    <h6>Id: @m.id Email: @m.email </h6><br />
+}
